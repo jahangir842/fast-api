@@ -9,15 +9,16 @@
 
 ## Running
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8008
 ```
 
 ## Endpoints to Test
-- GET http://localhost:8000/ - Hello World
-- GET http://localhost:8000/docs - Swagger UI
-- GET http://localhost:8000/items/5 - Path parameter
-- GET http://localhost:8000/search?q=test - Query parameter
-- POST http://localhost:8000/items - Create item
+- GET http://localhost:8008/ - Hello World
+- GET http://localhost:8008/docs - Swagger UI
+- GET http://localhost:8008/redoc - a clean API documentation view.
+- GET http://localhost:8008/items/5 - Path parameter
+- GET http://localhost:8008/search?q=test - Query parameter
+- POST http://localhost:8008/items - Create item
 
 ## Exercise
 1. Add a DELETE endpoint for items
